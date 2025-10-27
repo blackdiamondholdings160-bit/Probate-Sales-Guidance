@@ -138,22 +138,34 @@
     <p class="text-lg text-white font-bold mb-4">📞 510-343-6160 ext 104</p>
     <p class="text-lg text-white mb-10">👤 Felix Stuckey</p>
     <!-- Lead Capture Form -->
-    <form action="#" method="POST" class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg text-left">
-      <h3 class="text-2xl font-semibold mb-6 text-center">Request a Free Consultation</h3>
-      <div class="mb-4">
-        <label class="block text-gray-700 mb-2">Full Name</label>
-        <input type="text" name="name" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      </div>
-      <div class="mb-4">
-        <label class="block text-gray-700 mb-2">Email</label>
-        <input type="email" name="email" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      </div>
-      <div class="mb-6">
-        <label class="block text-gray-700 mb-2">Phone</label>
-        <input type="tel" name="phone" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      </div>
-      <button type="submit" class="w-full py-3 bg-indigo-900 text-white font-semibold rounded-lg hover:bg-indigo-700 transition">Submit</button>
-    </form>
+  <!-- Lead Capture Form -->
+<form action="https://script.google.com/macros/s/AKfycbwx0J32oREBmqt3TGkseNJ05QN_CrmmpWAR6yHglLBlcuUIzC4ai2pVbN976i4mWeg/exec" method="POST" class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg text-left">
+  <h3 class="text-2xl font-semibold mb-6 text-center">Request a Free Consultation</h3>
+  <div class="mb-4">
+    <label class="block text-gray-700 mb-2">Full Name</label>
+    <!-- Corrected name attribute to match Google Apps Script -->
+    <input type="text" name="fullName" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black">
+  </div>
+  <div class="mb-4">
+    <label class="block text-gray-700 mb-2">Email</label>
+    <!-- Corrected name attribute to match Google Apps Script -->
+    <input type="email" name="email" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black">
+  </div>
+  <div class="mb-6">
+    <label class="block text-gray-700 mb-2">Phone</label>
+    <!-- Corrected name attribute to match Google Apps Script -->
+    <input type="tel" name="phone" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black">
+  </div>
+
+  <!-- Reason for Inquiry Section -->
+  <div class="mb-4">
+    <label class="block text-gray-700 mb-2">Reason for Inquiry</label>
+    <textarea name="inquiry" rows="4" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black"></textarea>
+  </div>
+
+  <button type="submit" class="w-full py-3 bg-indigo-900 text-white font-semibold rounded-lg hover:bg-indigo-700 transition">Submit</button>
+</form>
+
   </section>
 
   <!-- Footer -->
@@ -196,3 +208,4 @@
 </body>
 
 </html>
+
