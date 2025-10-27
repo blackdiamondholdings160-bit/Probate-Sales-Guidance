@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probate Sales Guidance | Black Diamond Holdings</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+    }
+
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body style="background-color: #181818;" class="text-white">
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-[#9B59B6] to-[#8e44ad] text-white py-24 px-6 text-center">
+    <div class="absolute inset-0 bg-cover bg-center opacity-40"
+      style="background-image: url('https://images.unsplash.com/photo-1563186517-85c91b93ab13');"></div>
+    <div class="relative z-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Probate Sales Guidance</h1>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto">Navigate the complexities of probate sales with our expert guidance.
+        Our experienced team will help you through every step of the process, ensuring a smooth and successful sale.</p>
+      <!-- Trigger/Open The Modal -->
+      <a href="javascript:void(0)" class="inline-block px-6 py-3 bg-[#9B59B6] text-white rounded-lg hover:bg-[#8e44ad] transition"
+        onclick="openModal()">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Why Probate Sales Guidance Matters -->
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-6 text-[#9B59B6]">Why Probate Sales Guidance Matters</h2>
+    <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto mb-10">Probate sales are often complex and require specialized
+      knowledge to ensure that the property is sold legally and efficiently. Our guidance helps to navigate the legal
+      intricacies, maximize the sale price, and ensure all processes are completed according to the law.</p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="p-6 bg-[#8e44ad] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold text-white mb-4">Legal Expertise</h3>
+        <p class="text-gray-200">Our legal experts assist with understanding and fulfilling the probate requirements, ensuring
+          your sale is compliant with local laws and regulations.</p>
+      </div>
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold text-white mb-4">Maximized Sale Price</h3>
+        <p class="text-gray-200">We help you achieve the best value for your property by using our extensive market knowledge
+          and professional sales strategies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Services in Probate Sales -->
+  <section class="bg-[#F4F4F9] py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-10 text-[#8e44ad]">Our Key Probate Sales Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold text-white mb-4">Market Analysis</h3>
+        <p class="text-gray-200">We analyze the local market and comparable properties to determine the optimal sale price,
+          maximizing your return.</p>
+      </div>
+      <div class="p-6 bg-[#8e44ad] rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold text-white mb-4">Property Valuation</h3>
+        <p class="text-gray-200">We provide accurate property valuations to ensure the sale price is in line with current
+          market conditions.</p>
+      </div>
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold text-white mb-4">Transaction Management</h3>
+        <p class="text-gray-200">Our team manages the entire transaction process, from initial consultation to the final
+          sale, ensuring everything is handled efficiently and professionally.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center bg-[#8e44ad] text-white">
+    <h2 class="text-3xl font-semibold mb-6">How We Work with You</h2>
+    <p class="text-lg mb-8 text-gray-200">We provide end-to-end support throughout the probate sales process. Our team of
+      professionals works with you every step of the way, making sure that the transaction is smooth, transparent, and
+      legally sound.</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Step 1: Initial Consultation</h3>
+        <p class="text-gray-200">We start by understanding your needs, reviewing your probate situation, and determining the
+          best course of action.</p>
+      </div>
+      <div class="p-6 bg-[#8e44ad] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Step 2: Market Preparation</h3>
+        <p class="text-gray-200">We prepare your property for sale, including market analysis, pricing strategies, and listing
+          the property to attract buyers.</p>
+      </div>
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Step 3: Sales & Closing</h3>
+        <p class="text-gray-200">We handle the negotiations, paperwork, and closing procedures to ensure a smooth and
+          successful transaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center py-20 px-6 bg-[#181818] text-white">
+    <h2 class="text-3xl font-semibold mb-6">Get in Touch for Expert Probate Sales Guidance</h2>
+    <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">Ready to sell your property? Contact us today to learn how we
+      can help guide you through the probate sales process. Our team of experts is here to assist you every step of the
+      way.</p>
+    <p class="text-lg text-white font-bold mb-4">📞 510-343-6160 ext 104</p>
+    <p class="text-lg text-white mb-10">👤 Felix Stuckey</p>
+    <!-- Lead Capture Form -->
+    <form action="#" method="POST" class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg text-left">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Request a Free Consultation</h3>
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2">Full Name</label>
+        <input type="text" name="name" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 mb-2">Email</label>
+        <input type="email" name="email" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 mb-2">Phone</label>
+        <input type="tel" name="phone" required class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      </div>
+      <button type="submit" class="w-full py-3 bg-indigo-900 text-white font-semibold rounded-lg hover:bg-indigo-700 transition">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#181818] text-white text-center py-6">
+    <p>&copy; 2025 Black Diamond Holdings. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal Section -->
+  <!-- Trigger/Open The Modal -->
+  <a href="javascript:void(0)" class="inline-block px-6 py-3 bg-[#9B59B6] text-white rounded-lg hover:bg-[#8e44ad] transition"
+    onclick="openModal()">Learn More</a>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal hidden fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-75">
+    <div class="modal-content bg-white p-8 rounded-lg">
+      <span class="close text-[#9B59B6]" onclick="closeModal()">&times;</span>
+      <h2 class="text-2xl font-semibold mb-4">Get More Information</h2>
+      <p>Our experts are ready to assist you in managing your probate sale. Please fill out the form below, and we'll
+        contact you shortly.</p>
+      <form action="#" method="POST" class="mt-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg mb-4">
+        <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg mb-4">
+        <textarea name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 border rounded-lg mb-4"></textarea>
+        <button type="submit" class="w-full py-3 bg-[#9B59B6] text-white rounded-lg hover:bg-[#8e44ad] transition">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Modal functionality
+    function openModal() {
+      document.getElementById("myModal").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").classList.add("hidden");
+    }
+  </script>
+
+</body>
+
+</html>
